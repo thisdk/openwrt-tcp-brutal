@@ -22,6 +22,7 @@ define KernelPackage/brutal
 	SUBMENU:=Network Support
 	TITLE:=TCP Brutal Kernel module
 	FILES:=$(PKG_BUILD_DIR)/brutal.$(LINUX_KMOD_SUFFIX)
+	AUTOLOAD:=$(call AutoLoad,30,brutal)
 endef
 
 define KernelPackage/brutal/description
